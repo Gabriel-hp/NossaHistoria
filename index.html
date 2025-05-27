@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João & Maria - Nosso Amor em um Link</title>
+    <meta property="og:title" content="João & Maria - Nossa História de Amor">
+    <meta property="og:description" content="Nossa história de amor em um só lugar ❤️">
+    <meta property="og:image" content="./images/casal-foto.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Partículas Românticas -->
+    <div id="floating-hearts" class="floating-hearts"></div>
+    
+    <!-- Botão Modo Escuro -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Player de Música -->
+    <div class="music-player">
+        <button id="music-toggle" class="music-btn" aria-label="Tocar música">
+            <i class="fas fa-play"></i>
+        </button>
+        <audio id="background-music" loop>
+            <source src="./audio/musica-romantica.mp3" type="audio/mpeg">
+            <source src="./audio/musica-romantica.ogg" type="audio/ogg">
+        </audio>
+    </div>
+
+    <!-- Seção Hero -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="couple-photo">
+                <img src="./imagens/8.jpg" alt="Foto do casal João e Maria" class="couple-img">
+                <div class="heart-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            
+            <h1 class="couple-names">João & Maria</h1>
+            <p class="hero-subtitle">Nossa história de amor em um só lugar ❤️</p>
+            
+            <div class="days-counter">
+                <span>Juntos há <span id="days-together">0</span> dias</span>
+            </div>
+            
+            <button class="share-btn">
+                <i class="fas fa-share-alt"></i>
+                Compartilhar
+            </button>
+        </div>
+    </section>
+
+    <!-- Seção Nossa História -->
+    <section class="our-story-section">
+        <div class="container">
+            <h2 class="section-title">Nossa História</h2>
+            <div class="story-content">
+                <p class="story-intro">
+                    Tudo começou em uma tarde ensolarada de fevereiro, quando nossos olhares se cruzaram pela primeira vez no
+                    café da esquina. Era como se o tempo tivesse parado...
+                </p>
+                <p>
+                    Desde então, cada dia ao seu lado tem sido uma nova aventura. Descobrimos juntos que o amor verdadeiro não é
+                    apenas sobre os grandes momentos, mas sobre encontrar magia nos pequenos detalhes do dia a dia.
+                </p>
+                <p>
+                    Nossa jornada está apenas começando, e mal posso esperar para ver o que o futuro nos reserva. Com você, cada
+                    dia é uma nova página da nossa história de amor.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos -->
+    <section class="photo-gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-camera section-icon"></i>
+                <h2 class="section-title">Galeria de Momentos</h2>
+            </div>
+            
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="./imagens/1.jpg" alt="Nosso primeiro encontro">
+                    <div class="photo-caption">Nosso primeiro encontro</div>
+                </div>
+                <div class="photo-card">
+                    <img src="./imagens/2.jpg" alt="Viagem para a praia">
+                    <div class="photo-caption">Viagem para a praia</div>
+                </div>
+                <div class="photo-card">
+                    <img src="./imagens/6.jpg" alt="Aniversário de namoro">
+                    <div class="photo-caption">Aniversário de namoro</div>
+                </div>
+                <div class="photo-card">
+                    <img src="./imagens/7.jpg" alt="Jantar romântico">
+                    <div class="photo-caption">Jantar romântico</div>
+                </div>
+                <div class="photo-card">
+                    <img src="./imagens/8.jpg" alt="Passeio no parque">
+                    <div class="photo-caption">Passeio no parque</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Vídeos
+    <section class="videos-section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-video section-icon"></i>
+                <h2 class="section-title">Vídeos Especiais</h2>
+            </div>
+            
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="./images/video-viagem-thumb.jpg" alt="Nossa primeira viagem">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <video style="display: none;" controls>
+                            <source src="./videos/primeira-viagem.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 class="video-title">Nossa primeira viagem</h3>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="./images/video-declaracao-thumb.jpg" alt="Declaração de amor">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <video style="display: none;" controls>
+                            <source src="./videos/declaracao-amor.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 class="video-title">Declaração de amor</h3>
+                </div>
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="./images/video-momentos-thumb.jpg" alt="Momentos engraçados">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <video style="display: none;" controls>
+                            <source src="./videos/momentos-engracados.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3 class="video-title">Momentos engraçados</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+     -->
+
+    <!-- Seção de Cartinhas -->
+    <section class="letters-section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-envelope-heart section-icon"></i>
+                <h2 class="section-title">Cartinhas & Depoimentos</h2>
+            </div>
+            
+            <div class="letters-container">
+                <div class="letter-card">
+                    <div class="letter-header">
+                        <h3>Para meu amor</h3>
+                        <span class="letter-date">14 de Fevereiro, 2024</span>
+                    </div>
+                    <p class="letter-content">
+                        "Meu coração, cada dia ao seu lado é um presente. Você trouxe cores para a minha vida que eu nem sabia que existiam..."
+                    </p>
+                </div>
+                <div class="letter-card">
+                    <div class="letter-header">
+                        <h3>Promessa de amor</h3>
+                        <span class="letter-date">10 de Março, 2024</span>
+                    </div>
+                    <p class="letter-content">
+                        "Prometo estar ao seu lado em todos os momentos, nos risos e nas lágrimas, nas vitórias e nos desafios..."
+                    </p>
+                </div>
+                <div class="letter-card">
+                    <div class="letter-header">
+                        <h3>Nosso futuro</h3>
+                        <span class="letter-date">25 de Abril, 2024</span>
+                    </div>
+                    <p class="letter-content">
+                        "Quando penso no nosso futuro, vejo uma vida cheia de aventuras, cumplicidade e muito amor..."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <i class="fas fa-calendar-heart section-icon"></i>
+                <h2 class="section-title">Linha do Tempo</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">14 Fev 2023</div>
+                        <h3>Primeiro Encontro</h3>
+                        <p>Nos conhecemos no café</p>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">20 Mar 2023</div>
+                        <h3>Primeiro Beijo</h3>
+                        <p>Sob as estrelas no parque</p>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">15 Jun 2023</div>
+                        <h3>Primeira Viagem</h3>
+                        <p>Fim de semana na praia</p>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">10 Set 2023</div>
+                        <h3>Mudamos Juntos</h3>
+                        <p>Nosso primeiro lar</p>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">14 Fev 2024</div>
+                        <h3>1 Ano Juntos</h3>
+                        <p>Celebrando nosso amor</p>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensagem Final -->
+    <section class="final-message-section">
+        <div class="container">
+            <div class="final-content">
+                <i class="fas fa-heart final-heart"></i>
+                <h2>Obrigado por fazer parte da minha vida</h2>
+                <p>Que esse amor continue crescendo a cada dia, criando novas memórias e momentos especiais juntos.</p>
+                <div class="signature">Com todo meu amor, sempre ❤️</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
